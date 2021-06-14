@@ -47,7 +47,7 @@ class OrdersScreen extends StatelessWidget {
                       Text("UGX"),
                     ],
                   ),
-                  Icon(Icons.arrow_forward_ios)
+                  Icon(Icons.arrow_forward_ios),
                 ],
               )
             ],

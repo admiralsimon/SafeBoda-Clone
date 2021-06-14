@@ -10,52 +10,67 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "What do you need?",
-          style: TextStyle(color: Colors.white),
-        ),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: ,
+      //   centerTitle: true,
+      // ),
       body: SafeArea(
-        child: Container(
-          child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  width: 300,
-                  height: 200,
-                  margin: EdgeInsets.all(10.0),
-                  decoration: BoxDecoration(
-                    color: Colors.teal,
-                    borderRadius: BorderRadius.circular(15.0),
-                  ),
-                  child: Column(
-                    children: [
-                      Icon(Icons.bike_scooter),
-                      Text("Order Ride"),
-                    ],
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Container(
+            color: Colors.orange,
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(15.0),
+                  child: Text(
+                    "What do you need?",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  width: 300,
-                  height: 200,
-                  margin: EdgeInsets.all(10.0),
-                  decoration: BoxDecoration(
-                    color: Colors.teal,
-                    borderRadius: BorderRadius.circular(15.0),
-                  ),
-                  child: Column(
-                    children: [
-                      Icon(Icons.bike_scooter),
-                      Text("Order Ride"),
-                    ],
-                  ),
-                ),
-              ),
-            ],
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        width: 300,
+                        height: 200,
+                        margin: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        child: Column(
+                          children: [
+                            Icon(Icons.bike_scooter),
+                            Text("Order Ride"),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        width: 300,
+                        height: 200,
+                        margin: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        child: Column(
+                          children: [
+                            Icon(Icons.bike_scooter),
+                            Text("Order Ride"),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),
