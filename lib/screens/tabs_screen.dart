@@ -27,15 +27,6 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(
-      //     _screens[_selectedScreenIndex]["title"] as String,
-      //     style: TextStyle(color: Colors.black),
-      //   ),
-      //   actions: [
-      //     IconButton(icon: Icon(Icons.menu), onPressed: () {}),
-      //   ],
-      // ),
       body: _screens[_selectedScreenIndex]["screen"] as Widget,
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.orange,
